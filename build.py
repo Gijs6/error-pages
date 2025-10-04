@@ -4,7 +4,7 @@ import os
 
 status_codes = [400, 401, 403, 404, 405, 408, 429, 500, 502, 503, 504]
 
-with open("template.html") as f:
+with open("template.jinja") as f:
     template_str = f.read()
 
 template = Template(template_str)
